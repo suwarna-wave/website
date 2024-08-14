@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suwarna Pyakurel</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/suwarnac.png" alt="Richard hanrick" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Suwarna Pyakurel">Suwarna Pyakurel</h1>
+
+          <p class="title">Undergraduate Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="javascript:void(0)" class="contact-link" onclick="copyEmail()">suwarnapyakurel@gmail.com</a>
+            </div>
+
+            <script>
+              function copyEmail() {
+              var email = "suwarnapyakurel@gmail.com";
+              navigator.clipboard.writeText(email)
+                .then(function() {
+                alert("Email copied to clipboard!");
+                })
+                .catch(function(error) {
+                console.error("Failed to copy email: ", error);
+                });
+              }
+            </script>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:9840036060" class="contact-link">9840036060</a>
+              <a href="tel:9840036060" class="contact-link"></a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2004-10-14">Oct-14, 2004</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Biratnagar , Koshi Province , Nepal</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.facebook.com/pyakurel.suwarna" target="_blank" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/suwarna-wave" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://instagram.com/pyakurel.suwarna" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://linkedin.com/in/suwarnapyakurel" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm an enthusiastic space-robotics learner, currently pursuing an undergraduate degree in Electronics, Communication, and Information Engineering. 
+            As a proud member of the Nepal Astronomical Society (NASO), I'm driven to merge technology with the mysteries of space.
+          </p>
+
+          <p>
+            I've completed numerous robotics projects and am currently mastering the Robot Operating System (ROS).
+             With experience in web scraping, I'm now diving into cloud computing and plan to pursue backend development to connect my projects and research with the web.
+             My journey also includes exploring open-source projects, reflecting my commitment to collaborative innovation.
+          </p>
+
+          <p>
+            I advocate for diversity and women in tech as a local volunteer, striving to inspire and create inclusive opportunities. With experience in AI, machine learning, and team leadership, I constantly explore practical technologies to address real-world challenges.
+            <br><br>Let's connect and embark on this exciting journey together!
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/robot.svg" alt="Robot icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Robotics</h4>
+
+                <p class="service-item-text">
+                  Cutting-edge and high-quality robotic solutions developed at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web Development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/space.svg" alt="astronomy" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Astronomy and Space Science</h4>
+
+                <p class="service-item-text">
+                  Engaging in astronomical outreach, pioneering space robotics research, and tackling innovative space apps challenges.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/python.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Python, OpenCV, and Machine Learning</h4>
+
+                <p class="service-item-text">
+                  I develop advanced scripts, solutions and applications using Python, OpenCV, and machine learning                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <!--
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Er. Pravin Sangraula</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Suresh Bhattarai</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Er. Pukar Karki</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+
+
+          </ul>
+
+        </section>
+        -->
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Organizations I'm working with</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="https://www.nepalastronomicalsociety.org/">
+                <img src="./assets/images/NASO-removebg-preview.png" alt="NASO">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://robotics.ioepc.edu.np/">
+                <img src="./assets/images/robotics-removebg-preview.png" alt="Robotics Club">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://www.facebook.com/asrecbrt">
+                <img src="./assets/images/emblem_main.png" alt="ASReC">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://www.ran.org.np/">
+                <img src="./assets/images/ran.png" alt="RAN">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://mosd.koshi.gov.np">
+                <img src="./assets/images/emblem_main.png" alt="Samajik Bikash Mantralaya">
+              </a>
+            </li>
+
+          
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">TU , Institute of Engineering , Purwanchal Campus</h4>
+
+              <span>2023 — Ongoing</span>
+
+              <p class="timeline-text">
+                Undergraduate Engineer, Major in Electronics, Communication and Information Engineering.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">SOS Hermann Gmeiner Secondary School</h4>
+
+              <span>2020 — 2022</span>
+
+              <p class="timeline-text">
+                  High-Schooling in Physics, Chemistry, Mathematics , Biology and English as major subjects.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Shree Pokhariya Secondary School</h4>
+
+              <span>2018 - 2020</span>
+
+              <p class="timeline-text">
+                Secondary Level Schooling , Major in Science, Mathematics, English and Computer Science.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Undergraduate Student Member <a href="https://www.nepalastronomicalsociety.org" target="_blank">Nepal Astronomical Society</a></h4>
+              <span>2023 — Present</span>
+
+              <p class="timeline-text">
+                I’m an advocate for innovation, blending technical expertise with a deep enthusiasm for astronomy and AI. As a NASO Undergraduate Student Member and a keen Space Robotics learner, I am currently mastering the Robot Operating System (ROS), 
+                which will help me merge technology with the mysteries of space. I have organized and led various initiatives and events, including the NASA International Space Apps Challenge in Koshi Province, and have worked closely with local and provincial governments, such as the Ministry of Social Development in Koshi Province, to enhance technical and practical education. As a undergrad member of the NASO,
+                 I’m actively involved in astronomical outreach programs, numerous events, and seminars, and I am always open to collaboration.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Outreach Coordinator</h4>
+                <h1 class="h1 timeline-item-title" style="color: rgb(112, 7, 197);">Koshi Mini Yantra 2.0</h1>
+              <span>Jan/ 28-29 /2023</span>
+
+              <p class="timeline-text">
+                In the organizing committee of Koshi Mini Yantra 2.0, I served as an Outreach Coordinator, effectively showcasing my ability to lead process-oriented planning.
+                This role involved strategic coordination and execution of events, enhancing my organizational and communication skills.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Secretariat & Advisor of Municipal Child Club Network</h4>
+              <h1 class="h1 timeline-item-title" style="color: rgb(112, 7, 197);">Biratnagar , Koshi Province , Nepal</h1>
+
+              <span>2019-2021 (Secretariat), 2023-2024 (Advisor)</span>
+
+              <p class="timeline-text">
+                As the Secretariat of the Municipal Child Club Network in Biratnagar, the second-largest city in Nepal, 
+                I coordinated numerous initiatives aimed at youth engagement and development. 
+                This role honed my organizational and communication skills, enabling me to drive impactful community programs. 
+                Later, as an Advisor, I continued to support and guide the community, ensuring the sustainability and growth of youth-focused initiatives.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Executive Member </h4>
+              <h1 class="h1 timeline-item-title" style="color: rgb(112, 7, 197);">Astronomy and Space Science Study Research Committee</h1>
+
+              <span>2023</span>
+
+              <p class="timeline-text">
+                Serving as an Executive Member, I worked closely with local and provincial governments to promote astronomy and space science through community outreach and technical workshops. My work involved fostering a deeper understanding of technical education in Koshi Province and directly influencing the drafting of effective plans and policies.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Executive and General Member<a href="https://robotics.ioepc.edu.np/" target="_blank">Robotics Club, IOEPC</a></h4>
+
+              <span>2023-present</span>
+
+              <p class="timeline-text">
+                As an executive and general member of the Robotics Club, I actively worked on various projects.
+                 A major highlight was winning the International Robotics Competition: <a href="https://www.linkedin.com/posts/suwarnapyakurel_erc-yantra9-robotics-activity-7165182377105735680-sIMW?utm_source=share&utm_medium=member_desktop" target="_blank">Yantra 9.0 </a> where we won the Yantra Business Cup Expo. This competition tested and refined our problem-solving and entrepreneurship skills,
+                 showcasing our ability to innovate and succeed in a competitive environment.
+              </p>
+
+            </li>
+
+           
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web design</h5>
+                <data value="65">65%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 65%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Arduino , IoT and its integration in Basic , Intermediate and Advance Robotics</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Python</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Documentation and Public Speaking (Softskills)</h5>
+                <data value="85">85%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web Scrapping</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Basic Scripting and ML </h5>
+                <data value="40">45%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 40%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+        <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Academic Projects</button>
+            </li>
+            
+
+            <li class="filter-item">
+              <button data-filter-btn>Robotics and IoT</button>
+            </li>
+            
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Acaedemic projects</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Robotics and IoT</button>
+              </li>
+              
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/sorry.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Project</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+
+
+
+
+            <li class="project-item active" data-filter-item data-category="robotics and iot">
+              <a href="#">
+            
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+            
+                  <img src="./assets/images/sorry.jpg" alt="dsm." loading="lazy">
+                </figure>
+            
+                <h3 class="project-title">Project</h3>
+            
+                <p class="project-category">Robotics and IoT</p>
+            
+              </a>
+            </li>
+            
+
+              <li class="project-item  active" data-filter-item data-category="academic projects">
+                <a href="https://github.com/suwarna-wave/Library-Management-System-using-CPP">
+
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img src="./assets/images/library management system.jpg" alt="dsm." loading="lazy">
+                  </figure>
+
+                  <h3 class="project-title">Library Management System using C++</h3>
+
+                  <p class="project-category">Academic Projects</p>
+
+                </a>
+              </li>
+
+            <li class="project-item active" data-filter-item data-category="academic projects">
+              <a href="https://github.com/suwarna-wave/project-c">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/bankmanagement system.jpg" alt="metaspark" loading="lazy">
+                </figure>
+                <h3 class="project-title">Bank Management System using C</h3>
+                <p class="project-category">Academic Projects</p>
+              </a>
+            </li>
+            
+
+
+
+
+
+           
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="https://techtalksloud.blogspot.com/2024/08/the-future-of-remote-work-leveraging.html">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/Blog1.png" alt="Future of Remote Work" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2024-08-03">Aug 3, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Future of Remote Work</h3>
+
+                  <p class="blog-text">
+                    The Future of Remote Work: Leveraging Technology for a Hybrid Workforce
+
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <!--
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+
+                  <p class="blog-text">
+                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+            -->
+
+           
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.222238036042!2d87.2794293144042!3d26.81475998315133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb5e6e6e6e6e6e%3A0x3a6e6e6e6e6e6e6e!2sDharan%20456700!5e0!3m2!1sen!2snp!4v1660000000000!5m2!1sen!2snp" width="400" height="300" loading="lazy"></iframe>
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+          <h3 class="h3 form-title">Contact Form</h3>
+          <form action="https://formspree.io/f/mnnavaeb" method="POST" class="form" data-form>
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+          </form>
+        </section>
+        
+        <!--
+          - custom js link
+        -->
+        <script src="./assets/js/script.js"></script>
+        
+        <!--
+          - ionicon link
+        -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
